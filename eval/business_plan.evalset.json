@@ -1,0 +1,47 @@
+{
+  "eval_set_id": "venture_architect_business_plan_suite",
+  "eval_cases": [
+    {
+      "eval_id": "simple_saas_app",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "I want to build a simple SaaS tool that helps freelance designers track clients, invoices, and project feedback in one place."
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The business plan should be a long, formal document that includes at least the following sections: Executive Summary, Problem, Solution, Market Overview, Target Customers, Competitive Landscape, Business Model, Go-to-Market Strategy, Financial Projections, and Risks."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "local_services_business",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Create a business plan for a local dog-walking and pet-sitting service in Toronto."
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The plan should clearly describe the local Toronto market, customer segments, pricing model, operations, marketing channels, and include a simple 3-year financial projection."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
