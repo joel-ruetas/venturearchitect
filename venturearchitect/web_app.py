@@ -1,5 +1,3 @@
-# venturearchitect/web_app.py
-
 import os
 import uuid
 from textwrap import dedent
@@ -78,9 +76,6 @@ HTML_PAGE = dedent(
             <header class="mb-6 flex items-center justify-between gap-4">
                 <div>
                     <h1 class="text-2xl md:text-3xl font-semibold flex items-center gap-2">
-                        <span class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 border border-sky-500/40">
-                            🧠
-                        </span>
                         <span>VentureArchitect – Business Plan Copilot</span>
                     </h1>
                     <p class="text-slate-400 mt-1 text-sm md:text-base">
@@ -99,8 +94,7 @@ HTML_PAGE = dedent(
                 <!-- Left: Idea Input -->
                 <section class="bg-slate-900/60 border border-slate-700/60 rounded-2xl p-4 md:p-5 shadow-lg shadow-black/40">
                     <h2 class="text-lg font-semibold mb-2 flex items-center gap-2">
-                        <span class="text-sky-400">📝</span>
-                        Your Business Idea
+                        <span>Your Business Idea</span>
                     </h2>
                     <p class="text-xs md:text-sm text-slate-400 mb-3">
                         Enter 2–5 sentences describing your business. The copilot will write a long, formal,
@@ -119,7 +113,6 @@ HTML_PAGE = dedent(
                             id="generateBtn"
                             class="inline-flex items-center gap-2 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-medium text-sm md:text-base px-4 py-2 shadow-lg shadow-sky-500/30 disabled:opacity-60 disabled:cursor-not-allowed disabled:shadow-none transition"
                         >
-                            <span id="btnIcon">⚡</span>
                             <span>Generate Plan</span>
                         </button>
                     </div>
@@ -129,8 +122,7 @@ HTML_PAGE = dedent(
                 <section class="bg-slate-900/60 border border-slate-700/60 rounded-2xl p-4 md:p-5 shadow-lg shadow-black/40 flex flex-col min-h-[260px]">
                     <div class="flex items-center justify-between gap-2 mb-2">
                         <h2 class="text-lg font-semibold flex items-center gap-2">
-                            <span class="text-emerald-400">📄</span>
-                            Generated Business Plan
+                            <span>Generated Business Plan</span>
                         </h2>
                         <button
                             id="copyBtn"
@@ -162,7 +154,6 @@ Ready to generate your plan. Describe your idea on the left and click “Generat
             const ideaInput = document.getElementById("idea");
             const output = document.getElementById("output");
             const statusEl = document.getElementById("status");
-            const btnIcon = document.getElementById("btnIcon");
 
             async function generatePlan() {
                 const idea = ideaInput.value.trim();
@@ -174,7 +165,6 @@ Ready to generate your plan. Describe your idea on the left and click “Generat
                 generateBtn.disabled = true;
                 copyBtn.disabled = true;
                 statusEl.textContent = "Generating a long, formal business plan...";
-                btnIcon.textContent = "⏳";
                 output.textContent = "Thinking through market, strategy, and financials...";
 
                 try {
@@ -199,7 +189,6 @@ Ready to generate your plan. Describe your idea on the left and click “Generat
                     statusEl.textContent = e.message || "Unexpected error.";
                 } finally {
                     generateBtn.disabled = false;
-                    btnIcon.textContent = "⚡";
                 }
             }
 
