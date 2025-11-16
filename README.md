@@ -1,6 +1,6 @@
 # 🚀 VentureArchitect – Business Plan Copilot
 
-VentureArchitect is a **multi-agent business plan generator** built on top of the [Google AI Agents Development Kit (ADK)](https://github.com/google-deepmind/ai-agents). You give it a short description of a business idea (e.g. *“I want to create a garage sale app”*), and it orchestrates several specialist agents to produce a **long, structured, professional business plan**.
+VentureArchitect is a **multi-agent business plan generator** built on top of the [Google AI Agents Development Kit (ADK)](https://github.com/google-deepmind/ai-agents). You give it a short description of a business idea, and it orchestrates several specialist agents to produce a **long, structured, professional business plan**.
 
 You can use VentureArchitect in three ways:
 
