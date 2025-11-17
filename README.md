@@ -277,6 +277,6 @@ Some quick ways to adapt VentureArchitect to your needs:
 
 ## 11\. License & Credits
 
-This project my Capstone Project for the Kaggle 5-Day Agents Intensive Course patterns and uses the Google ADK for multi-agent orchestration and evaluation.
+This project my Capstone Project for the Kaggle 5-Day Agents Intensive Course.
 
 > See the [LICENSE](./LICENSE) file for details.
